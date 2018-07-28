@@ -82,7 +82,7 @@ The [IHostingEnvironment.ApplicationName](/dotnet/api/microsoft.extensions.hosti
 **Environment variable**: `<PREFIX_>APPLICATIONKEY` (`<PREFIX_>` is [optional and user-defined](#configuration-builder))
 
 ```csharp
-WebHost.CreateDefaultBuilder(args)
+var host = new HostBuilder()
     .UseSetting(WebHostDefaults.ApplicationKey, "CustomApplicationName")
 ```
 
